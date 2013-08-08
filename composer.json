@@ -1,0 +1,28 @@
+{
+    "name": "fm/keystone-client",
+    "type": "project",
+    "description": "An HTTP client with automatic authentication for an OpenStack Identity Service API a.k.a. Keystone",
+    "keywords": ["openstack", "identity", "keystone", "authentication", "token"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fieg",
+            "email": "jeroen@financial-media.nl"
+        },
+        {
+            "name": "pkruithof",
+            "email": "peter@financial-media.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+		"guzzle/guzzle": "~3.7",
+        "symfony/event-dispatcher": ">=2.*"
+    },
+    "suggest": {
+        "monolog/monolog": "For logging request information",
+    },
+    "autoload": {
+        "psr-0": { "FM\\Keystone": "src/" }
+    }
+}
