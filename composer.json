@@ -17,10 +17,10 @@
     "require": {
         "php": ">=5.3.3",
 		"guzzle/guzzle": "~3.7",
-        "symfony/event-dispatcher": ">=2.*"
+        "symfony/event-dispatcher": "~2.1"
     },
     "suggest": {
-        "monolog/monolog": "For logging request information",
+        "monolog/monolog": "For logging request information"
     },
     "autoload": {
         "psr-0": { "FM\\Keystone": "src/" }
