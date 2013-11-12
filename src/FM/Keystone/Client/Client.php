@@ -121,19 +121,18 @@ class Client extends GuzzleClient
 
     public function getPublicUrl()
     {
+        if (!$this->publicUrl) {
+            $this->dispatch('client.initialize', array('client' => $this));
+        }
+
         return $this->publicUrl;
     }
 
     public function getBaseUrl($expand = true)
     {
-        if (!$this->publicUrl) {
-            $this->dispatch(
-                'client.initialize',
-                array(
-                    'client' => $this
-                )
-            );
-        }
+        // make sure we have a public url (which is the same as the base url),
+        // this triggers the token to be fetched
+        $this->getPublicUrl();
 
         return parent::getBaseUrl($expand);
     }
