@@ -93,6 +93,11 @@ class Factory implements EventSubscriberInterface
             /** @var \Guzzle\Http\Message\Request $request */
             $request = $event['request'];
 
+            // if this is the token-url, stop now because we won't be able to fetch a token
+            if ($request->getUrl() === $request->getClient()->getTokenUrl()) {
+                return;
+            }
+
             // see if we have retries left
             if ($request->hasHeader('X-Auth-Retries')) {
                 $headerValues = $request->getHeader('X-Auth-Retries')->toArray();
