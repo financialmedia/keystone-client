@@ -35,6 +35,10 @@ class Client extends GuzzleClient
     protected $keystoneUsername;
     protected $keystonePassword;
 
+    /**
+     * @param string $username
+     * @param string $password
+     */
     public function setKeystoneCredentials($username, $password)
     {
         $this->keystoneUsername = $username;
@@ -61,6 +65,9 @@ class Client extends GuzzleClient
         return $this->tenantName;
     }
 
+    /**
+     * @param string $type
+     */
     public function setServiceType($type)
     {
         $this->serviceType = $type;
@@ -71,6 +78,9 @@ class Client extends GuzzleClient
         return $this->serviceType;
     }
 
+    /**
+     * @param string|null $name
+     */
     public function setServiceName($name)
     {
         $this->serviceName = $name;
@@ -81,6 +91,9 @@ class Client extends GuzzleClient
         return $this->serviceName;
     }
 
+    /**
+     * @param string $tokenUrl
+     */
     public function setTokenUrl($tokenUrl)
     {
         $this->tokenUrl = $tokenUrl;
@@ -113,6 +126,9 @@ class Client extends GuzzleClient
         return $this->token->getId();
     }
 
+    /**
+     * @param string $url
+     */
     public function setPublicUrl($url)
     {
         $this->publicUrl = $url;
