@@ -4,8 +4,6 @@ namespace FM\Keystone\Client;
 
 use Psr\Log\LoggerInterface;
 use Guzzle\Common\Event;
-use Guzzle\Plugin\Cache\CachePlugin;
-use Guzzle\Plugin\Cache\DefaultCacheKeyProvider;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use FM\Cache\CacheInterface;
 
