@@ -29,6 +29,10 @@ class Token implements \Serializable
         $this->catalogs[$type][$name] = $endpoints;
     }
 
+    /**
+     * @param string $type
+     * @param string $name
+     */
     public function getServiceCatalog($type, $name = null)
     {
         return is_null($name) ? current($this->catalogs[$type]) : $this->catalogs[$type][$name];
