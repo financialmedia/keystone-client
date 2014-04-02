@@ -17,7 +17,8 @@
     "require": {
         "php": ">=5.4",
         "guzzle/guzzle": "~3.7",
-        "symfony/event-dispatcher": "~2.1"
+        "symfony/event-dispatcher": "~2.1",
+        "fm/cache": "~0.1"
     },
     "suggest": {
         "monolog/monolog": "For logging request information"
