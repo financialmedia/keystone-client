@@ -23,6 +23,9 @@ use Guzzle\Http\Client as GuzzleClient;
  *
  * Note that you still have to deal with expired tokens, by obtaining a new
  * token and giving it to the client.
+ *
+ * @deprecated The financial-media/keystone-client library is deprecated. Use treehouselabs/keystone-client instead
+ *
  */
 class Client extends GuzzleClient
 {

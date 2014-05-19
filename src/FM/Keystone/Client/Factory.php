@@ -18,6 +18,7 @@ use FM\Cache\CacheInterface;
  *     $client = $factory->createClient($tokenUrl, $username, $password);
  * </code>
  *
+ * @deprecated The financial-media/keystone-client library is deprecated. Use treehouselabs/keystone-client instead
  */
 class Factory implements EventSubscriberInterface
 {

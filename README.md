@@ -1,4 +1,4 @@
-keystone-client
-===============
+DEPRECATED
+==========
 
-An HTTP client with automatic authentication for an OpenStack Identity Service API a.k.a. Keystone
+This library is superseded by https://packagist.org/packages/treehouselabs/keystone-client

@@ -2,6 +2,9 @@
 
 namespace FM\Keystone\Client;
 
+/**
+ * @deprecated The financial-media/keystone-client library is deprecated. Use treehouselabs/keystone-client instead
+ */
 class Token implements \Serializable
 {
     private $id;

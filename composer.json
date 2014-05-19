@@ -24,7 +24,8 @@
       "phpunit/phpunit": "~3.7"
     },
     "suggest": {
-        "monolog/monolog": "For logging request information"
+        "monolog/monolog": "For logging request information",
+		"treehouselabs/keystone-client": "For the maintained counterpart of this library"
     },
     "autoload": {
         "psr-0": { "FM\\Keystone": "src/" }
